@@ -174,10 +174,13 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
             e.printStackTrace();
         }
 
+        //round double to 5 decimal place
         double lat5 = Math.round(lat * 100000);
         lat5 = lat5/100000;
+        //round double to 5 decimal place
         double lng5 = Math.round(lat * 100000);
         lng5 = lng5/100000;
+        //round double to 2 decimal place
         double alt2 = Math.round(alt * 100);
         alt2 = alt2/100;
 
