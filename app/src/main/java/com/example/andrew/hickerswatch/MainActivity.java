@@ -183,9 +183,10 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         //round double to 2 decimal place
         double alt2 = Math.round(alt * 100);
         alt2 = alt2/100;
-        //round double to 2 decimal place
+        //round double to 2 decimal place and convert into kph
         double speed2 = Math.round(speed * 3.6 * 100);
         speed2 = speed2/100;
+        //round double to 2 decimal place
         double bear2 = Math.round(bear * 100);
         bear2 = bear2/100;
 
