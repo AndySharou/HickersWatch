@@ -183,13 +183,20 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         //round double to 2 decimal place
         double alt2 = Math.round(alt * 100);
         alt2 = alt2/100;
+        //round double to 2 decimal place
+        double speed2 = Math.round(speed * 3.6 * 100);
+        speed2 = speed2/100;
+        double bear2 = Math.round(bear * 100);
+        bear2 = bear2/100;
+
+
 
 
         latTV.setText("Latitude: "+ lat5);
         lngTV.setText("Longitude: "+ lng5);
         altTV.setText("Altitude: "+ alt2 + "m");
-        speedTV.setText("Speed: "+ speed + "m/s");
-        bearTV.setText("Bearing: "+ bear + "");
+        speedTV.setText("Speed: "+ speed2 + "kph");
+        bearTV.setText("Bearing: "+ bear2 + "");
         accTV.setText("Accuracy: "+ acc + "m");
 
         Log.i("Latitude", String.valueOf(lat));
